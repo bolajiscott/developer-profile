@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth; scroll-padding: 5rem;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Author: bolaji, Length: 1 page(s)">
+
+  <title>bolaji-scott</title>
+
+  <link rel="stylesheet" href="/assets/main.css">
+
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+</head>
+
+<body class="antialiased bg-gray-300 dark:bg-gray-700 min-h-screen">
+
+  
+
+<a name="landing"></a>
+<section aria-label="hero" class="bg-hero-light dark:bg-hero-dark flex items-center justify-center h-screen bg-fixed">
+  <div class="text-center">
+    <h1 class="text-6xl dark:text-white font-medium mb-6">Looking for someone?</h1>
+    <div class="flex w-full justify-center">
+      <a class="dark:text-white  flex items-center mt-4 mx-auto text-3xl px-5 py-3 border-2 border-black dark:border-white rounded-md hover:shadow-md font-medium
+    hover:bg-white hover:border-white  dark:hover:bg-gray-900 dark:hover:border-gray-900" href="#home">
+        <span class="mr-2"> Find the right person</span>
+        <span class="w-8 h-8">
+          <svg class="fill-current w-full h-full"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="group p-4 bg-gray-200 dark:bg-gray-800 border-black sticky top-0 z-40 flex justify-end shadow-lg">
+    <button title="Toggle Theme" onclick="theme()"
+      class="w-12 h-6 rounded-full p-1 bg-gray-400 dark:bg-gray-600 relative transition-colors duration-500 ease-in
+      focus:outline-none focus:ring-2 focus:ring-blue-700 dark:focus:ring-blue-600 focus:border-transparent
+      ">
+      <div id="toggle"
+        class="rounded-full w-4 h-4 bg-blue-600 dark:bg-blue-500 relative ml-0 dark:ml-6 pointer-events-none transition-all duration-300 ease-out">
+      </div>
+    </button>
+  </div>
+
+<article role="alert" id="notification"
+  class="hidden sm:flex dark:bg-opacity-50 text-lg absolute w-full z-30 text-blue-900 dark:text-blue-100 text-center px-6 py-1 bg-blue-100 border-blue-200 dark:bg-blue-800 dark:border-blue-900 border-2">
+  <div class="flex-1">
+    <p>The content of this page was fetched from various API's. The page was generated with 11ty.
+      <a href="https://github.com/bolajiscott" class="underline hover:text-blue-700 dark:hover:text-white">Visit the repo to create your own!</a>
+    </p>
+  </div>
+  <button title="close" onclick="c()" class="">
+    <span class="pointer-events-none"><svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-3 h-3" viewBox="0 0 24 24">
+  <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg></span>
+  </button>
+  <script>function c() { document.getElementById('notification').remove(); }</script>
+</article>
+
+<a class="relative top-6" name="home"></a>
+
+<div class="flex">
+
+  <aside class="text-primary bg-gray-100 dark:bg-gray-600 w-screen max-w-xs 4xl:max-w-ms 5xl:max-w-md relative border-r dark:border-gray-700 hidden md:block">
+    <nav class="sticky top-5 w-full">
+      <ul class="text-center p-6 pt-16">
+        
+        <li
+          class="text-xl rounded-md leading-loose hover:text-blue-700 dark:hover:text-blue-300 border my-2 bg-white dark:bg-gray-900 dark:border-black hover:shadow-md active:shadow-none">
+          <a class="px-3 py-1 block w-full h-full" href="#bio">Biography</a>
+        </li>
+        
+        <li
+          class="text-xl rounded-md leading-loose hover:text-blue-700 dark:hover:text-blue-300 border my-2 bg-white dark:bg-gray-900 dark:border-black hover:shadow-md active:shadow-none">
+          <a class="px-3 py-1 block w-full h-full" href="#blog">Blog Posts</a>
+        </li>
+        
+        <li
+          class="text-xl rounded-md leading-loose hover:text-blue-700 dark:hover:text-blue-300 border my-2 bg-white dark:bg-gray-900 dark:border-black hover:shadow-md active:shadow-none">
+          <a class="px-3 py-1 block w-full h-full" href="#git">Github</a>
+        </li>
+        
+        <li
+          class="text-xl rounded-md leading-loose hover:text-blue-700 dark:hover:text-blue-300 border my-2 bg-white dark:bg-gray-900 dark:border-black hover:shadow-md active:shadow-none">
+          <a class="px-3 py-1 block w-full h-full" href="#so">Stack Overflow</a>
+        </li>
+        
+        <li
+          class="text-xl rounded-md leading-loose hover:text-blue-700 dark:hover:text-blue-300 border my-2 bg-white dark:bg-gray-900 dark:border-black hover:shadow-md active:shadow-none">
+          <a class="px-3 py-1 block w-full h-full" href="#contact">Contact</a>
+        </li>
+        
+      </ul>
+      <section class="px-7 py-5 text-center">
+        <h2 class="text-xl mb-2">Favorite Technologies</h2>
+        
+        <div class="flex justify-center flex-wrap space-x-1 space-y-1">
+  
+  <div class="rounded-full border bg-white dark:bg-gray-900 dark:border-black px-3 py-1">docker</div>
+  
+  <div class="rounded-full border bg-white dark:bg-gray-900 dark:border-black px-3 py-1">nomad</div>
+  
+  <div class="rounded-full border bg-white dark:bg-gray-900 dark:border-black px-3 py-1">grafana</div>
+  
+  <div class="rounded-full border bg-white dark:bg-gray-900 dark:border-black px-3 py-1">javascript</div>
+  
+  <div class="rounded-full border bg-white dark:bg-gray-900 dark:border-black px-3 py-1">consul</div>
+  
+  <div class="rounded-full border bg-white dark:bg-gray-900 dark:border-black px-3 py-1">prometheus</div>
+  
+  <div class="rounded-full border bg-white dark:bg-gray-900 dark:border-black px-3 py-1">kubernetes</div>
+  
+  <div class="rounded-full border bg-white dark:bg-gray-900 dark:border-black px-3 py-1">python</div>
+  
+  <div class="rounded-full border bg-white dark:bg-gray-900 dark:border-black px-3 py-1">terraform</div>
+  
+  <div class="rounded-full border bg-white dark:bg-gray-900 dark:border-black px-3 py-1">ansible</div>
+  
+  <div class="rounded-full border bg-white dark:bg-gray-900 dark:border-black px-3 py-1">go</div>
+  
+</div>
+
+
+      </section>
+      <div class="p-6"></div>
+    </nav>
+  </aside>
+
+  <main id="main" class="flex-1 relative">
+
+    <section name="linkedin" class="py-16">
+      <a name="bio"></a>
+      <div class="container mx-auto">
+        <h2 class="caption">The Author</h2>
+        <article class="flex flex-col-reverse lg:flex-row p-8 bg-primary card-shadow">
+          <div class=" px-5">
+            <h1 class="text-4xl text-center leading-loose text-primary">Bolaji Ogidan</h1>
+            <p class="text-center text-2xl text-secondary">Hi, I am a frontEnd developer and a tech Enthusiast, i love building and working around technologies.</p>
+            <p class="text-center pt-2"></p>
+          </div>
+          <div class="px-5 h-48 w-48 mx-auto lg:h-auto lg:w-auto">
+            <img class="rounded-sm " src="/assets/GOOD.png" alt="Bolaji Ogidan" />
+          </div>
+        </article>
+        <footer class="flex w-full justify-center mt-4">
+          <a href="https://www.linkedin.com/in/bolaji-ogidan-b1704377/" class="see-more">
+            <span class="mr-2"> See more on LinkedIn</span>
+            <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewbox="0 50 512 512">
+  <title>Linkedin</title>
+  <path d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683
+        C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z
+        M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615
+        c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915
+        s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z"/>
+</svg>
+          </a>
+        </footer>
+      </div>
+    </section>
+
+    <section name="featured_posts" class="py-16">
+      <a name="blog"></a>
+      <div class="container mx-auto">
+        <h2 class="caption">Featured Dev.to Posts</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 min-h-0">
+          
+        </div>
+        <footer class="flex w-full justify-center mt-4">
+          <a href="https://dev.to/bolajiscott" class="see-more">
+            <span class="mr-2"> See more on Dev.to</span>
+            <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+  <path d="M7.73 11.93c0 1.72-.02 1.83-.23 2.07c-.19.17-.38.23-.76.23l-.51.01l-.03-2.27l-.02-2.27h.52c.35 0 .6.07.77.21c.24.21.26.25.26 2.02M22 7.5v9c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2v-9c0-1.11.89-2 2-2h16c1.11 0 2 .89 2 2M8.93 11.73c-.03-1.84-.05-1.99-.29-2.39c-.4-.68-.85-.84-2.36-.84H5v7h1.21c1.33 0 1.89-.17 2.29-.71c.41-.53.5-.98.43-3.06m4.19-3.23h-1.48c-1.49 0-1.5 0-1.71.28S9.7 9.21 9.7 12v2.96l.27.27c.25.27.31.27 1.71.27h1.44v-1.19l-1.09-.04l-1.1-.03V12.6l.68-.03l.66-.04v-1.19h-1.39V9.7h2.24V8.5m5.88.06c0-.06-.3-.06-.66-.06l-.68.06l-.59 2.35c-.38 1.48-.62 2.27-.67 2.13c-.08-.27-1.14-4.44-1.14-4.49c0-.05-.31-.05-.68-.05h-.69l.41 1.55c.2.87.59 2.28.81 3.15c.34 1.35.46 1.65.75 1.94c.2.22.45.36.61.36c.33 0 .76-.34.9-.73C17.5 14.5 19 8.69 19 8.56z" /><rect x="0" y="0" class="w-5 h-5" fill="rgba(0, 0, 0, 0)" /></svg>
+          </a>
+        </footer>
+      </div>
+    </section>
+
+    <section name="pinned_repos" class="py-16">
+      <a name="git"></a>
+      <div class="container mx-auto">
+        <h2 class="caption">Pinned Github Repositories</h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-3">
+          
+        </div>
+        <footer class="flex w-full justify-center mt-4">
+          <a href="https://github.com/bolajiscott?tab=repositories" class="see-more">
+            <span class="mr-2"> See more on Github</span>
+            <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
+  <path d="M10 0a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69a3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.4.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.58.69.48A10 10 0 0 0 10 0"></path>
+</svg>
+          </a>
+        </footer>
+      </div>
+    </section>
+
+    <section name="stackoverflow_answers" class="py-16">
+      <a name="so"></a>
+      <div class="container mx-auto">
+        <h2 class="caption">Top Answers on Stack Overflow</h2>
+        <div class="grid grid-cols-1 gap-3">
+          
+        </div>
+      </div>
+      <div class="flex w-full justify-center mt-4">
+        <a href="https://stackoverflow.com/users/5749693/ft-scott" class="see-more">
+          <span class="mr-2"> See more on Stack Overflow</span>
+          <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path d="M15 21h-10v-2h10v2zm6-11.665l-1.621-9.335-1.993.346 1.62 9.335 1.994-.346zm-5.964 6.937l-9.746-.975-.186 2.016 9.755.879.177-1.92zm.538-2.587l-9.276-2.608-.526 1.954 9.306 2.5.496-1.846zm1.204-2.413l-8.297-4.864-1.029 1.743 8.298 4.865 1.028-1.744zm1.866-1.467l-5.339-7.829-1.672 1.14 5.339 7.829 1.672-1.14zm-2.644 4.195v8h-12v-8h-2v10h16v-10h-2z"/>
+</svg>
+        </a>
+      </div>
+    </section>
+
+    <div class="py-8"></div>
+
+  </main>
+</div>
+
+  <footer class="relative bg-gray-100 dark:bg-gray-600 dark:border-gray-700 border-t flex flex-col items-center p-12">
+  <a href="#home" class="absolute right-12 top-3 text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white">Back to top</a>
+  <a name="contact"></a>
+  <ul class="w-full flex flex-wrap justify-center text-center -mx-3 text-xl text-gray-500 dark:text-gray-300 mt-5">
+    
+      <li class="px-3">
+        <a title="Github" class="flex items-center hover:text-gray-700 dark:hover:text-white" href="https://github.com/bolajiscott">
+          <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
+  <path d="M10 0a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69a3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.4.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.58.69.48A10 10 0 0 0 10 0"></path>
+</svg>
+        </a>
+      </li>
+    
+      <li class="px-3">
+        <a title="Twitter" class="flex items-center hover:text-gray-700 dark:hover:text-white" href="https://twitter.com/bolajiogidan">
+          <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
+  <path d="M6.29 18.25c7.55 0 11.67-6.25 11.67-11.67v-.53c.8-.59 1.49-1.3 2.04-2.13-.75.33-1.54.55-2.36.65a4.12 4.12 0 0 0 1.8-2.27c-.8.48-1.68.81-2.6 1a4.1 4.1 0 0 0-7 3.74 11.65 11.65 0 0 1-8.45-4.3 4.1 4.1 0 0 0 1.27 5.49C2.01 8.2 1.37 8.03.8 7.7v.05a4.1 4.1 0 0 0 3.3 4.03 4.1 4.1 0 0 1-1.86.07 4.1 4.1 0 0 0 3.83 2.85A8.23 8.23 0 0 1 0 16.4a11.62 11.62 0 0 0 6.29 1.84"></path>
+</svg>
+        </a>
+      </li>
+    
+      <li class="px-3">
+        <a title="Linkedin" class="flex items-center hover:text-gray-700 dark:hover:text-white" href="https://www.linkedin.com/in/bolaji-ogidan-b1704377/">
+          <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewbox="0 50 512 512">
+  <title>Linkedin</title>
+  <path d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683
+        C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z
+        M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615
+        c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915
+        s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z"/>
+</svg>
+        </a>
+      </li>
+    
+      <li class="px-3">
+        <a title="Email" class="flex items-center hover:text-gray-700 dark:hover:text-white" href="mailto:fataiogidan@gmail.com">
+          <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewbox="0 0 24 24">
+  <path d="M22.288 21h-20.576c-.945 0-1.712-.767-1.712-1.712v-13.576c0-.945.767-1.712 1.712-1.712h20.576c.945 0 1.712.767 1.712 1.712v13.576c0 .945-.767 1.712-1.712 1.712zm-10.288-6.086l-9.342-6.483-.02 11.569h18.684v-11.569l-9.322 6.483zm8.869-9.914h-17.789l8.92 6.229s6.252-4.406 8.869-6.229z"/>
+</svg>
+        </a>
+      </li>
+    
+      <li class="px-3">
+        <a title="Stack Overflow" class="flex items-center hover:text-gray-700 dark:hover:text-white" href="https://stackoverflow.com/users/5749693/ft-scott">
+          <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path d="M15 21h-10v-2h10v2zm6-11.665l-1.621-9.335-1.993.346 1.62 9.335 1.994-.346zm-5.964 6.937l-9.746-.975-.186 2.016 9.755.879.177-1.92zm.538-2.587l-9.276-2.608-.526 1.954 9.306 2.5.496-1.846zm1.204-2.413l-8.297-4.864-1.029 1.743 8.298 4.865 1.028-1.744zm1.866-1.467l-5.339-7.829-1.672 1.14 5.339 7.829 1.672-1.14zm-2.644 4.195v8h-12v-8h-2v10h16v-10h-2z"/>
+</svg>
+        </a>
+      </li>
+    
+      <li class="px-3">
+        <a title="Dev.to" class="flex items-center hover:text-gray-700 dark:hover:text-white" href="https://dev.to/bolajiscott">
+          <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+  <path d="M7.73 11.93c0 1.72-.02 1.83-.23 2.07c-.19.17-.38.23-.76.23l-.51.01l-.03-2.27l-.02-2.27h.52c.35 0 .6.07.77.21c.24.21.26.25.26 2.02M22 7.5v9c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2v-9c0-1.11.89-2 2-2h16c1.11 0 2 .89 2 2M8.93 11.73c-.03-1.84-.05-1.99-.29-2.39c-.4-.68-.85-.84-2.36-.84H5v7h1.21c1.33 0 1.89-.17 2.29-.71c.41-.53.5-.98.43-3.06m4.19-3.23h-1.48c-1.49 0-1.5 0-1.71.28S9.7 9.21 9.7 12v2.96l.27.27c.25.27.31.27 1.71.27h1.44v-1.19l-1.09-.04l-1.1-.03V12.6l.68-.03l.66-.04v-1.19h-1.39V9.7h2.24V8.5m5.88.06c0-.06-.3-.06-.66-.06l-.68.06l-.59 2.35c-.38 1.48-.62 2.27-.67 2.13c-.08-.27-1.14-4.44-1.14-4.49c0-.05-.31-.05-.68-.05h-.69l.41 1.55c.2.87.59 2.28.81 3.15c.34 1.35.46 1.65.75 1.94c.2.22.45.36.61.36c.33 0 .76-.34.9-.73C17.5 14.5 19 8.69 19 8.56z" /><rect x="0" y="0" class="w-5 h-5" fill="rgba(0, 0, 0, 0)" /></svg>
+        </a>
+      </li>
+    
+  </ul>
+
+  <p class="text-gray-700 dark:text-gray-300 mt-12">
+    Copyright 2021 bolajiscott. All right reserved.
+    <a class="text-sm hover:text-gray-900 dark:hover:text-white hover:underline" href="/terms-of-use">Term of Use</a>
+  </p>
+</footer>
+
+
+  <script>
+    window.theme = function (event) {
+      document.documentElement.classList.toggle('dark')
+      document.documentElement.classList.toggle('light')
+      localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+    }
+  </script>
+
+</body>
+
+</html>
